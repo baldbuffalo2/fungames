@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-player.load("pacman.swf").then(() => {
-    console.info("Ruffle successfully loaded the file");
-}).catch((e) => {
-    console.error(`Ruffle failed to load the file: ${e}`);
-});
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("pacman.swf");
+    });
+</script>
+<script src="path/to/ruffle/ruffle.js"></script>
     
     </body>
 </html>
