@@ -11,7 +11,7 @@
         player.load("pacman.swf");
     });
 </script>
-<script src="path/to/ruffle/ruffle.js"></script>
+<script src="baldbuffalo2/ruffle.js"></script>
     
     </body>
 </html>
