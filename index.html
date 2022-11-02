@@ -2,17 +2,11 @@
 <html>
 <body>
 
-<script>
-    window.RufflePlayer = window.RufflePlayer || {};
-    window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("container");
-        container.appendChild(player);
-        player.load("pacman.swf");
-    });
-</script>
-<script src="https://github.com/baldbuffalo2/fungames.git"></script>
+player.load("pacman.swf").then(() => {
+    console.info("Ruffle successfully loaded the file");
+}).catch((e) => {
+    console.error(`Ruffle failed to load the file: ${e}`);
+});
     
     </body>
 </html>
