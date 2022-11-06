@@ -4,6 +4,16 @@
         <meta charset='utf8'>
     </head>
     <body>
+        chrome.runtime.onMessage.addListener((message sender, sendResponse
+});
+*/) => {
+(async () => {
+if (message.action === UPDATE_PAGE) {
+await applyStyleFromSettings();
+}
+})();
+return true;
+        
         <div id='ruffle'></div>
         <script src='https://baldbuffalo2.github.io/fungames/ruffle/ruffle.js'></script>
         <script>
