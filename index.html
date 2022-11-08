@@ -1,45 +1,40 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta charset='utf8'>
-    </head>
-    <body>
-</style> 
-</Head>
-<Body> 
-<header>
-<nav>
-<ul>
-<li>
-<style type=text/css> 
-body 
-{
-height: 125vh;
-margin-top: 80px;
-padding: 30px;
-background-size: cover;
-
-</style> 
-</Head>
-<Body> 
-<header>
-<nav>
-<ul>
-<li>
-<a href="#"> Home </a>
-</li>
-<li>
-<a href="#"> About </a>
-</li>
-<li>
-<a href="#"> Contact </a>
-</li>
-<li> <a href="#"> Terms of use </a>
-</li>
-<li>
-<a href="#"> Join Us </a>
-</li>
-</ul>
-</nav>
-</Body> 
-</Html>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css" />
+   <title>Document</title>
+ </head>
+ <body>
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">MUO</div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="/">Home</a></li>
+         <li><a href="/">About</a></li>
+         <li class="services">
+           <a href="/">Services</a>
+           <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+             <li><a href="/">Dropdown 1 </a></li>
+             <li><a href="/">Dropdown 2</a></li>
+             <li><a href="/">Dropdown 2</a></li>
+             <li><a href="/">Dropdown 3</a></li>
+             <li><a href="/">Dropdown 4</a></li>
+           </ul>
+         </li>
+         <li><a href="/">Pricing</a></li>
+         <li><a href="/">Contact</a></li>
+       </div>
+     </ul>
+   </nav>
+ </body>
+</html>
