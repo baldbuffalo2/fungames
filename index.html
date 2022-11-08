@@ -1,4 +1,14 @@
 <!DOCTYPE HTML>
+
+chrome.runtime.onMessage.addListener((message sender, sendResponse
+});
+*/) => {
+(async () => {
+if (message.action === UPDATE_PAGE) {
+await applyStyleFromSettings();
+}
+})();
+return true;
 <html>
     <head>
         <meta charset='utf8'>
