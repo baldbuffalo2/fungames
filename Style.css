@@ -1,18 +1,3 @@
-/* UTILITIES */
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-}
-body {
- font-family: cursive;
-}
-a {
- text-decoration: none;
-}
-li {
- list-style: none;
-}
 /* NAVBAR STYLING STARTS */
 .navbar {
  display: flex;
@@ -43,7 +28,6 @@ li {
 .menu li {
  padding: 5px 14px;
 }
-
 /* DROPDOWN MENU */
 .services {
  position: relative; 
